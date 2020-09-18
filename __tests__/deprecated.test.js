@@ -1,6 +1,6 @@
 import 'jest';
 import propTypes from 'prop-types';
-import deprecated from '../deprecated';
+import {deprecated} from '../deprecated';
 
 const { error } = console;
 

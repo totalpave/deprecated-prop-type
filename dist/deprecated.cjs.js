@@ -1,8 +1,12 @@
 'use strict';
 
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+Object.defineProperty(exports, '__esModule', { value: true });
 
-var warning = _interopDefault(require('warning'));
+var warning = require('warning');
+
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+var warning__default = /*#__PURE__*/_interopDefaultLegacy(warning);
 
 let warned = {};
 
@@ -11,7 +15,7 @@ function deprecated(propType, explanation) {
     if (props[propName] != null) {
       const message = `"${propName}" property of "${componentName}" has been deprecated.\n${explanation}`;
       if (!warned[message]) {
-        warning(false, message);
+        warning__default['default'](false, message);
         warned[message] = true;
       }
     }
@@ -26,4 +30,4 @@ function _resetWarned() {
 
 deprecated._resetWarned = _resetWarned;
 
-module.exports = deprecated;
+exports.deprecated = deprecated;

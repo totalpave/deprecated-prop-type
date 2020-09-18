@@ -22,4 +22,4 @@ function _resetWarned() {
 
 deprecated._resetWarned = _resetWarned;
 
-export default deprecated;
+export { deprecated };

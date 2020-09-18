@@ -2,7 +2,7 @@ import warning from 'warning';
 
 let warned = {};
 
-export default function deprecated(propType, explanation) {
+export function deprecated(propType, explanation) {
   return function validate(props, propName, componentName, ...rest) { // Note ...rest here
     if (props[propName] != null) {
       const message = `"${propName}" property of "${componentName}" has been deprecated.\n${explanation}`;
