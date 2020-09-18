@@ -1,5 +1,5 @@
 {
-  "name": "deprecated-prop-type",
+  "name": "@totalpave/deprecated-prop-type",
   "version": "1.0.0",
   "description": "React Prop Type to mark a prop as deprecated",
   "main": "dist/deprecated.cjs.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thefrontside/deprecated-prop-type.git"
+    "url": "git+https://github.com/totalpave/deprecated-prop-type.git"
   },
   "keywords": [
     "prop-types",
@@ -22,9 +22,9 @@
   "author": "Taras Mankovski <taras@frontside.io>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thefrontside/deprecated-prop-type/issues"
+    "url": "https://github.com/totalpave/deprecated-prop-type/issues"
   },
-  "homepage": "https://github.com/thefrontside/deprecated-prop-type#readme",
+  "homepage": "https://github.com/totalpave/deprecated-prop-type#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
