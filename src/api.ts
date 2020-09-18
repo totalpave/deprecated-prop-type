@@ -1,0 +1,2 @@
+
+export {deprecated} from './deprecated';

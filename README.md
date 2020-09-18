@@ -19,7 +19,7 @@ npm i deprecated-prop-type
 ```jsx
 import React from 'react';
 import propTypes from 'prop-types';
-import deprecated from 'deprecated-prop-type';
+import {deprecated} from 'deprecated-prop-type';
 
 export default class MyComponent extends React.Component {
   static propTypes = {

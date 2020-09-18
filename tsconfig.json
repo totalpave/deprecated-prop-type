@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "es3",
+        "module": "commonjs",
+        "declaration": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "importHelpers": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "plugins": [],
+        "incremental": true
+    },
+    "typedocOptions": {
+        "mode": "modules",
+        "out": "docs"
+    },
+    "exclude": [
+        "**/*.spec.ts",
+        "*/.spec.ts",
+        "tests",
+        "dist",
+        "spec",
+        "node_modules"
+    ]
+}
