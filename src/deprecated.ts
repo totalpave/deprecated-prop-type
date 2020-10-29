@@ -1,6 +1,5 @@
 import * as warning from 'warning';
 import {IDictionary} from '@totalpave/interfaces';
-// import {} from 'prop-types';
 
 let warned: IDictionary<boolean> = {};
 
@@ -11,7 +10,7 @@ export interface IValidateFunction {
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function deprecated(propType: any, explanation: string): IValidateFunction {
     return function validate(props, propName, componentName, ...rest) { // Note ...rest here
-        if (props[propName] !== null) {
+        if (props[propName] !== null && props[propName] !== undefined) {
             let message: string = `"${propName}" property of "${componentName}" has been deprecated.\n${explanation}`;
             if (!warned[message]) {
                 warning(false, message);
